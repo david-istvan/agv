@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<be.uantwerpen.msdl.metamodels:ProcessModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:be.uantwerpen.msdl.metamodels="metamodels.processmodel" xmlns:be.uantwerpen.msdl.metamodels_1="metamodels.pm" xmlns:be.uantwerpen.msdl.metamodels_2="metamodels.properties" xmlns:be.uantwerpen.msdl.metamodels_3="metamodels.cost">
+<be.uantwerpen.msdl.metamodels:ProcessModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:be.uantwerpen.msdl.metamodels="metamodels.processmodel" xmlns:be.uantwerpen.msdl.metamodels_1="metamodels.pm" xmlns:be.uantwerpen.msdl.metamodels_2="metamodels.properties">
   <ftg>
     <formalism id="b7f4a150-706e-4467-b67e-4cc5e4182c41" name="SysML Req" inputOf="//@ftg/@transformation.0 //@ftg/@transformation.2 //@ftg/@transformation.1"/>
     <formalism id="e56dc3d8-f86b-4428-a724-3eeb44251c4c" name="SysML BDD" inputOf="//@ftg/@transformation.1 //@ftg/@transformation.2" outputOf="//@ftg/@transformation.0" types="//@process.0/@node.14"/>
@@ -7,14 +7,14 @@
     <formalism id="6ff5cc0b-1636-4813-8b77-a40c2eb7d267" name="AMESim" outputOf="//@ftg/@transformation.2" types="//@process.0/@node.16"/>
     <formalism id="8bbdb3f7-cfcd-4a9a-9232-1aa117bb2448" name="CAD" types="//@process.0/@node.17"/>
     <formalism id="e7c00797-e44c-415b-983c-7647c309ebb3" name="Simulink" types="//@process.0/@node.19"/>
-    <transformation id="17346d7e-6a71-4d95-86c8-9c09d0820ff5" name="ConceptDesign" input="//@ftg/@formalism.0" output="//@ftg/@formalism.1" types="//@process.0/@node.3"/>
+    <transformation id="17346d7e-6a71-4d95-86c8-9c09d0820ff5" name="ConceptDesign" input="//@ftg/@formalism.0" output="//@ftg/@formalism.1" types="//@process.0/@node.3" resourceConstraint="//@resourceConstraint.0"/>
     <transformation id="d046e230-14cc-4473-aa00-78cd697cdce4" name="tr1" input="//@ftg/@formalism.1 //@ftg/@formalism.0" output="//@ftg/@formalism.2" types="//@process.0/@node.4"/>
     <transformation id="6ed406e3-9c1a-4822-aff5-0abb37fe9f3c" name="tr2" input="//@ftg/@formalism.0 //@ftg/@formalism.1" output="//@ftg/@formalism.3" types="//@process.0/@node.5"/>
   </ftg>
   <process id="c6903f52-b6c6-4713-a23e-b9811f690348">
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Initial" id="76a0f917-9d3d-4128-876b-ed735bf18c6b" controlOut="//@process.0/@controlFlow.21"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:FlowFinal" id="e08a0ba6-9657-4617-a49c-b53fc948b7ae" controlIn="//@process.0/@controlFlow.14"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" id="ce311a27-67a4-4a92-85dd-c5692cfa7f25" dataFlowFrom="//@process.0/@node.17" controlIn="//@process.0/@controlFlow.6" controlOut="//@process.0/@controlFlow.5" name="Process Mech Design"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" id="ce311a27-67a4-4a92-85dd-c5692cfa7f25" dataFlowFrom="//@process.0/@node.17" controlIn="//@process.0/@controlFlow.6" controlOut="//@process.0/@controlFlow.5" name="Process Mech Design" allocation="//@allocation.0"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="55ba4eb3-4280-4c20-ac61-a80c478674d1" dataFlowTo="//@process.0/@node.14" controlIn="//@process.0/@controlFlow.21" controlOut="//@process.0/@controlFlow.16" name="Concept Design" typedBy="//@ftg/@transformation.0"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="6c6f1cc8-82b0-4680-96f1-c19d3c458bd0" dataFlowFrom="//@process.0/@node.14" dataFlowTo="//@process.0/@node.15" controlIn="//@process.0/@controlFlow.16" controlOut="//@process.0/@controlFlow.17" name="Create MBM" typedBy="//@ftg/@transformation.1"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="f1d74657-0854-4c16-b74c-78646f689917" dataFlowTo="//@process.0/@node.16" controlIn="//@process.0/@controlFlow.17" controlOut="//@process.0/@controlFlow.18" name="Create electical model" typedBy="//@ftg/@transformation.2"/>
@@ -70,7 +70,7 @@
     <property id="ca59e9eb-a3f7-4155-8ecd-f63d1ac4d44f" intent="//@intent.0 //@intent.2" name="Rise time" relationshipLink="//@propertyModel/@relationship.0/@propertyLink.2"/>
     <property id="02d51548-f941-4008-85d1-70c5951def1f" intent="//@intent.24" name="Control properties" relationshipLink="//@propertyModel/@relationship.0/@propertyLink.0 //@propertyModel/@relationship.10/@propertyLink.0"/>
     <property id="ddb4afd4-8aeb-49d4-b48b-dcad90a1682e" intent="//@intent.25" name="Trajectory" relationshipLink="//@propertyModel/@relationship.0/@propertyLink.3 //@propertyModel/@relationship.10/@propertyLink.1"/>
-    <property id="e7a8b080-a101-4779-bba6-0fa6c60e5f06" intent="//@intent.4 //@intent.6" name="Inertia" relationshipLink="//@propertyModel/@relationship.3/@propertyLink.2 //@propertyModel/@relationship.10/@propertyLink.2"/>
+    <property id="e7a8b080-a101-4779-bba6-0fa6c60e5f06" intent="//@intent.4 //@intent.6 //@intent.27" name="Inertia" relationshipLink="//@propertyModel/@relationship.3/@propertyLink.2 //@propertyModel/@relationship.10/@propertyLink.2"/>
     <property id="a57c8416-a9ba-4447-8db7-49eafff14688" intent="//@intent.5 //@intent.7" name="Total mass" relationshipLink="//@propertyModel/@relationship.6/@propertyLink.0"/>
     <property id="5b661175-5a80-4ce9-a3f5-6624d7490a70" intent="//@intent.8 //@intent.9 //@intent.15" name="Motor power profile" relationshipLink="//@propertyModel/@relationship.7/@propertyLink.1 //@propertyModel/@relationship.10/@propertyLink.3 //@propertyModel/@relationship.11/@propertyLink.0 //@propertyModel/@relationship.12/@propertyLink.1"/>
     <property id="bf3fc7ac-c3d6-4748-a62a-1cc2cab9af18" intent="//@intent.10 //@intent.11" name="Autonomy" relationshipLink="//@propertyModel/@relationship.7/@propertyLink.2"/>
@@ -146,9 +146,9 @@
       <propertyLink id="2a6c4847-a81a-465c-88e7-e45a15897681" direction="PROPERTY" property="//@propertyModel/@property.6"/>
     </relationship>
   </propertyModel>
-  <costModel>
-    <cost xsi:type="be.uantwerpen.msdl.metamodels_3:RatioScale" id="9a28841c-596a-4dda-9348-29f16fde1373"/>
-  </costModel>
+  <resourceModel>
+    <resource name="resource1" allocation="//@allocation.0" allocationConstraint="//@resourceConstraint.0"/>
+  </resourceModel>
   <intent id="5040644f-3c8e-4a15-8fd7-ec6907d85380" activity="//@process.0/@node.10" subject="//@propertyModel/@property.1" type="MODIFY"/>
   <intent id="bc5558de-0237-4129-b24f-b6f69e0324a9" activity="//@process.0/@node.10" subject="//@propertyModel/@property.0" type="MODIFY"/>
   <intent id="cd150324-0be6-41d7-946a-c322f002647d" activity="//@process.0/@node.20" subject="//@propertyModel/@property.1" type="CHECK"/>
@@ -176,4 +176,7 @@
   <intent id="03e1d9bf-67c7-4efc-9b1f-455c1b0b7d35" activity="//@process.0/@node.9" subject="//@propertyModel/@property.2" type="MODIFY"/>
   <intent id="22fdef54-3609-4931-aa48-fa0244e106a8" activity="//@process.0/@node.10" subject="//@propertyModel/@property.3" type="READ"/>
   <intent id="09edaabf-f50f-4739-9854-a84b6d8e738d" activity="//@process.0/@node.12" subject="//@propertyModel/@property.16" type="MODIFY"/>
+  <intent id="6c0d1c03-f65f-49f2-96dd-aeb4383027ef" activity="//@process.0/@node.18" subject="//@propertyModel/@property.4" type="MODIFY"/>
+  <resourceConstraint id="7631d3de-e8a4-471c-ba98-caef724d8986" resource="//@resourceModel/@resource.0" transformation="//@ftg/@transformation.0"/>
+  <allocation id="54c77af4-8f19-4172-a48d-6ff14835f451" activity="//@process.0/@node.2" resource="//@resourceModel/@resource.0"/>
 </be.uantwerpen.msdl.metamodels:ProcessModel>
