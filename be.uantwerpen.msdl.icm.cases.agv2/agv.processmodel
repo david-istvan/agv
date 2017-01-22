@@ -16,9 +16,9 @@
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:FlowFinal" id="e08a0ba6-9657-4617-a49c-b53fc948b7ae" controlIn="//@process.0/@controlFlow.14"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" id="ce311a27-67a4-4a92-85dd-c5692cfa7f25" dataFlowFrom="//@process.0/@node.17" controlIn="//@process.0/@controlFlow.6" controlOut="//@process.0/@controlFlow.5" name="Process Mechanical Design" cost="//@costModel/@costFactor.0/@cost.0 //@costModel/@costFactor.1/@cost.0"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="55ba4eb3-4280-4c20-ac61-a80c478674d1" dataFlowTo="//@process.0/@node.14" controlIn="//@process.0/@controlFlow.21" controlOut="//@process.0/@controlFlow.16" name="Concept Design" cost="//@costModel/@costFactor.1/@cost.1" typedBy="//@ftg/@transformation.0"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="6c6f1cc8-82b0-4680-96f1-c19d3c458bd0" dataFlowFrom="//@process.0/@node.14" dataFlowTo="//@process.0/@node.15" controlIn="//@process.0/@controlFlow.16" controlOut="//@process.0/@controlFlow.17" name="Create MBM" typedBy="//@ftg/@transformation.1" allocation="//@resourceModel/@allocation.0"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="6c6f1cc8-82b0-4680-96f1-c19d3c458bd0" dataFlowFrom="//@process.0/@node.14" dataFlowTo="//@process.0/@node.15" controlIn="//@process.0/@controlFlow.16" controlOut="//@process.0/@controlFlow.17" name="Create MBM" typedBy="//@ftg/@transformation.1" allocation="//@resourceModel/@allocation.0 //@resourceModel/@allocation.1" demand="//@resourceModel/@demand.3"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="f1d74657-0854-4c16-b74c-78646f689917" dataFlowTo="//@process.0/@node.16" controlIn="//@process.0/@controlFlow.17" controlOut="//@process.0/@controlFlow.18" name="Create electical model" typedBy="//@ftg/@transformation.2"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="680724f0-c7e2-442c-9802-a6916a5f5715" controlIn="//@process.0/@controlFlow.13 //@process.0/@controlFlow.19" controlOut="//@process.0/@controlFlow.24" name="Select Battery" demand="//@resourceModel/@demand.0"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="680724f0-c7e2-442c-9802-a6916a5f5715" controlIn="//@process.0/@controlFlow.13 //@process.0/@controlFlow.19" controlOut="//@process.0/@controlFlow.24" name="Select Battery" demand="//@resourceModel/@demand.1 //@resourceModel/@demand.2"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="0b1f3219-665e-4868-b003-70ad260265c0" controlIn="//@process.0/@controlFlow.9 //@process.0/@controlFlow.20" controlOut="//@process.0/@controlFlow.22" name="Select Motor"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="3b564f4f-557a-42a3-8ebe-d949a667e2b1" dataFlowFrom="//@process.0/@node.15" dataFlowTo="//@process.0/@node.15" controlIn="//@process.0/@controlFlow.5" controlOut="//@process.0/@controlFlow.3" name="Adapt MBM"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="1a6b7be8-178b-4989-a282-1686d7c5cb50" dataFlowTo="//@process.0/@node.19" controlIn="//@process.0/@controlFlow.2 //@process.0/@controlFlow.3" controlOut="//@process.0/@controlFlow.4" name="Design PID"/>
@@ -68,13 +68,17 @@
   </process>
   <propertyModel/>
   <resourceModel>
-    <resourceType name="CAD tool" types="//@resourceModel/@resource.0 //@resourceModel/@resource.1 //@resourceModel/@resource.2" demand="//@resourceModel/@demand.0"/>
-    <resourceType name="Tool"/>
+    <resourceType name="CAD tool" types="//@resourceModel/@resource.0 //@resourceModel/@resource.1 //@resourceModel/@resource.2" demand="//@resourceModel/@demand.0 //@resourceModel/@demand.2"/>
+    <resourceType name="Tool" demand="//@resourceModel/@demand.1 //@resourceModel/@demand.3"/>
     <resource name="c" typedBy="//@resourceModel/@resourceType.0" allocation="//@resourceModel/@allocation.0"/>
-    <resource name="c2" typedBy="//@resourceModel/@resourceType.0"/>
+    <resource name="c2" typedBy="//@resourceModel/@resourceType.0" allocation="//@resourceModel/@allocation.1"/>
     <resource name="c3" typedBy="//@resourceModel/@resourceType.0" availability="100"/>
     <allocation id="928a7a0d-3eb3-4a61-ad12-78a343dcbf9a" activity="//@process.0/@node.4" resource="//@resourceModel/@resource.0" amount="10"/>
-    <demand id="42c65c77-a58a-4f91-8f48-3b59ef7c963f" amount="1000" resourceType="//@resourceModel/@resourceType.0" activity="//@process.0/@node.6"/>
+    <allocation id="915e435a-587a-48e3-a3b5-4db98cb8826b" activity="//@process.0/@node.4" resource="//@resourceModel/@resource.1" amount="12"/>
+    <demand id="42c65c77-a58a-4f91-8f48-3b59ef7c963f" amount="1" resourceType="//@resourceModel/@resourceType.0"/>
+    <demand id="320da5be-7b6e-4258-8b03-650ca8cad7e3" amount="2" resourceType="//@resourceModel/@resourceType.1" activity="//@process.0/@node.6"/>
+    <demand id="72a2d455-e0e6-4de4-be91-e67a7a3f9f44" amount="123" resourceType="//@resourceModel/@resourceType.0" activity="//@process.0/@node.6"/>
+    <demand id="ad34465a-7699-455c-ad22-5e05ac5a2e00" amount="2" resourceType="//@resourceModel/@resourceType.1" activity="//@process.0/@node.4"/>
     <resourceConstraint id="26668de2-5868-4c65-a99e-fdc0ef050813" amount="1000"/>
     <resourceConstraint id="e7169246-5c20-4083-a638-70845cca8e82" amount="1000"/>
     <resourceConstraint id="09b6b9ee-e397-452e-890a-f9ed1d39ab0f" transformation="//@ftg/@transformation.0"/>

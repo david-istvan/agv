@@ -3254,6 +3254,119 @@
     </ownedRepresentations>
     <ownedRepresentations xmi:type="table:DTable" xmi:id="_DSK1oGuQEea_FZxP41iV4g" name="new Allocation Table" headerColumnWidth="196">
       <target xmi:type="be.uantwerpen.msdl.metamodels_2:ProcessModel" href="agv.processmodel#/"/>
+      <lines xmi:type="table:DLine" xmi:id="_745PQODxEeawgvDgyaLdSQ" label="Process Mechanical Design">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" href="agv.processmodel#//@process.0/@node.2"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" href="agv.processmodel#//@process.0/@node.2"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_746dYODxEeawgvDgyaLdSQ" label="Concept Design">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.3"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.3"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747EcODxEeawgvDgyaLdSQ" label="Create MBM">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.4"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.4"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+        <cells xmi:type="table:DCell" xmi:id="_74-HwODxEeawgvDgyaLdSQ" label="10" column="_748SkODxEeawgvDgyaLdSQ">
+          <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.4"/>
+          <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.4"/>
+          <currentStyle xmi:type="table:DCellStyle" xmi:id="_74_V4ODxEeawgvDgyaLdSQ" labelSize="12" defaultBackgroundStyle="true" backgroundColor="138,226,52">
+            <foregroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@intersection.0"/>
+            <backgroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@intersection.0"/>
+          </currentStyle>
+          <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@intersection.0"/>
+        </cells>
+        <cells xmi:type="table:DCell" xmi:id="_1ForYOD0EeawgvDgyaLdSQ" label="12" column="_748SkeDxEeawgvDgyaLdSQ">
+          <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.4"/>
+          <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.4"/>
+          <currentStyle xmi:type="table:DCellStyle" xmi:id="_1FpScOD0EeawgvDgyaLdSQ" labelSize="12" defaultBackgroundStyle="true" backgroundColor="138,226,52">
+            <foregroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@intersection.0"/>
+            <backgroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@intersection.0"/>
+          </currentStyle>
+          <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@intersection.0"/>
+        </cells>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747EceDxEeawgvDgyaLdSQ" label="Create electical model">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.5"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.5"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747EcuDxEeawgvDgyaLdSQ" label="Select Battery">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.6"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.6"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747Ec-DxEeawgvDgyaLdSQ" label="Select Motor">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.7"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.7"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747EdODxEeawgvDgyaLdSQ" label="Adapt MBM">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.8"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.8"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747EdeDxEeawgvDgyaLdSQ" label="Design PID">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.9"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.9"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747EduDxEeawgvDgyaLdSQ" label="Co-simuate controlled MBM">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" href="agv.processmodel#//@process.0/@node.10"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" href="agv.processmodel#//@process.0/@node.10"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747Ed-DxEeawgvDgyaLdSQ" label="Adapt Electrical Model">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.11"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.11"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747EeODxEeawgvDgyaLdSQ" label="Simulate Electrical Model">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" href="agv.processmodel#//@process.0/@node.12"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" href="agv.processmodel#//@process.0/@node.12"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747rgODxEeawgvDgyaLdSQ" label="Check Autonomy">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.13"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.13"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747rgeDxEeawgvDgyaLdSQ" label="Adapt Mechanical">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.18"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.18"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747rguDxEeawgvDgyaLdSQ" label="Check Dynamic Response">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.20"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.20"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747rg-DxEeawgvDgyaLdSQ" label="Check Motor Power">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.22"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.22"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <lines xmi:type="table:DLine" xmi:id="_747rhODxEeawgvDgyaLdSQ" label="Create Mechanical">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.27"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.27"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedLineMappings[name='ActivityLine']"/>
+      </lines>
+      <columns xmi:type="table:DTargetColumn" xmi:id="_748SkODxEeawgvDgyaLdSQ" label="c" cells="_74-HwODxEeawgvDgyaLdSQ" width="49">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_4:Resource" href="agv.processmodel#//@resourceModel/@resource.0"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_4:Resource" href="agv.processmodel#//@resourceModel/@resource.0"/>
+        <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedColumnMappings.0"/>
+      </columns>
+      <columns xmi:type="table:DTargetColumn" xmi:id="_748SkeDxEeawgvDgyaLdSQ" label="c2" cells="_1ForYOD0EeawgvDgyaLdSQ" width="55">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_4:Resource" href="agv.processmodel#//@resourceModel/@resource.1"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_4:Resource" href="agv.processmodel#//@resourceModel/@resource.1"/>
+        <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedColumnMappings.0"/>
+      </columns>
+      <columns xmi:type="table:DTargetColumn" xmi:id="_748SkuDxEeawgvDgyaLdSQ" label="c3" width="55">
+        <target xmi:type="be.uantwerpen.msdl.metamodels_4:Resource" href="agv.processmodel#//@resourceModel/@resource.2"/>
+        <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_4:Resource" href="agv.processmodel#//@resourceModel/@resource.2"/>
+        <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']/@ownedColumnMappings.0"/>
+      </columns>
       <description xmi:type="description_2:CrossTableDescription" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceAllocationTable']"/>
     </ownedRepresentations>
     <ownedRepresentations xmi:type="table:DTable" xmi:id="_02JncN6PEea04NhuqbDEmg" name="new Resource Demand Table" headerColumnWidth="302">
@@ -3272,6 +3385,15 @@
         <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.4"/>
         <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.4"/>
         <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@ownedLineMappings[name='ActivityLine']"/>
+        <cells xmi:type="table:DCell" xmi:id="_18jFQOD0EeawgvDgyaLdSQ" label="2" column="_02KOhN6PEea04NhuqbDEmg">
+          <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.4"/>
+          <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.4"/>
+          <currentStyle xmi:type="table:DCellStyle" xmi:id="_18jFQeD0EeawgvDgyaLdSQ" labelSize="12" defaultBackgroundStyle="true" backgroundColor="138,226,52">
+            <foregroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@intersection.0"/>
+            <backgroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@intersection.0"/>
+          </currentStyle>
+          <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@intersection.0"/>
+        </cells>
       </lines>
       <lines xmi:type="table:DLine" xmi:id="_zvqGMt6fEea04NhuqbDEmg" label="Create electical model">
         <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.5"/>
@@ -3282,10 +3404,19 @@
         <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.6"/>
         <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.6"/>
         <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@ownedLineMappings[name='ActivityLine']"/>
-        <cells xmi:type="table:DCell" xmi:id="_7Ro0cN6gEea04NhuqbDEmg" label="1000" column="_02KOg96PEea04NhuqbDEmg">
+        <cells xmi:type="table:DCell" xmi:id="_yxLkMODuEeah9P6gUlRErQ" label="2" column="_02KOhN6PEea04NhuqbDEmg">
           <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.6"/>
           <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.6"/>
-          <currentStyle xmi:type="table:DCellStyle" xmi:id="_7RpbgN6gEea04NhuqbDEmg" labelSize="12" defaultBackgroundStyle="true" backgroundColor="138,226,52">
+          <currentStyle xmi:type="table:DCellStyle" xmi:id="_yxLkMeDuEeah9P6gUlRErQ" labelSize="12" defaultBackgroundStyle="true" backgroundColor="138,226,52">
+            <foregroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@intersection.0"/>
+            <backgroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@intersection.0"/>
+          </currentStyle>
+          <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@intersection.0"/>
+        </cells>
+        <cells xmi:type="table:DCell" xmi:id="_GuOaEODyEeawgvDgyaLdSQ" label="123" column="_02KOg96PEea04NhuqbDEmg">
+          <target xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.6"/>
+          <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.6"/>
+          <currentStyle xmi:type="table:DCellStyle" xmi:id="_GuOaEeDyEeawgvDgyaLdSQ" labelSize="12" defaultBackgroundStyle="true" backgroundColor="138,226,52">
             <foregroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@intersection.0"/>
             <backgroundStyleOrigin xmi:type="description_2:IntersectionMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@intersection.0"/>
           </currentStyle>
@@ -3347,12 +3478,12 @@
         <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" href="agv.processmodel#//@process.0/@node.27"/>
         <originMapping xmi:type="description_2:LineMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@ownedLineMappings[name='ActivityLine']"/>
       </lines>
-      <columns xmi:type="table:DTargetColumn" xmi:id="_02KOg96PEea04NhuqbDEmg" label="CAD tool" cells="_7Ro0cN6gEea04NhuqbDEmg" width="91">
+      <columns xmi:type="table:DTargetColumn" xmi:id="_02KOg96PEea04NhuqbDEmg" label="CAD tool" cells="_GuOaEODyEeawgvDgyaLdSQ" width="156">
         <target xmi:type="be.uantwerpen.msdl.metamodels_4:ResourceType" href="agv.processmodel#//@resourceModel/@resourceType.0"/>
         <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_4:ResourceType" href="agv.processmodel#//@resourceModel/@resourceType.0"/>
         <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@ownedColumnMappings.0"/>
       </columns>
-      <columns xmi:type="table:DTargetColumn" xmi:id="_02KOhN6PEea04NhuqbDEmg" label="Tool" width="67">
+      <columns xmi:type="table:DTargetColumn" xmi:id="_02KOhN6PEea04NhuqbDEmg" label="Tool" cells="_yxLkMODuEeah9P6gUlRErQ _18jFQOD0EeawgvDgyaLdSQ" width="67">
         <target xmi:type="be.uantwerpen.msdl.metamodels_4:ResourceType" href="agv.processmodel#//@resourceModel/@resourceType.1"/>
         <semanticElements xmi:type="be.uantwerpen.msdl.metamodels_4:ResourceType" href="agv.processmodel#//@resourceModel/@resourceType.1"/>
         <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/resource/be.uantwerpen.msdl.process.design/description/process.odesign#//@ownedViewpoints[name='ProcessViewpoint']/@ownedRepresentations[name='ResourceDemandTable']/@ownedColumnMappings.0"/>
