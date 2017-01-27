@@ -1,47 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <be.uantwerpen.msdl.metamodels:ProcessModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:be.uantwerpen.msdl.metamodels="metamodels.processmodel" xmlns:be.uantwerpen.msdl.metamodels_1="metamodels.pm" xmlns:be.uantwerpen.msdl.metamodels_2="metamodels.properties">
   <ftg>
-    <formalism id="b7f4a150-706e-4467-b67e-4cc5e4182c41" name="SysML Req" inputOf="//@ftg/@transformation.0 //@ftg/@transformation.2 //@ftg/@transformation.1"/>
-    <formalism id="e56dc3d8-f86b-4428-a724-3eeb44251c4c" name="SysML BDD" inputOf="//@ftg/@transformation.1 //@ftg/@transformation.2" outputOf="//@ftg/@transformation.0" types="//@process.0/@node.14"/>
-    <formalism id="fbca8ab6-fb19-42d1-852a-432671e404fa" name="VirtualLab Motion" outputOf="//@ftg/@transformation.1" types="//@process.0/@node.15"/>
-    <formalism id="6ff5cc0b-1636-4813-8b77-a40c2eb7d267" name="AMESim" outputOf="//@ftg/@transformation.2" types="//@process.0/@node.16"/>
+    <formalism id="b7f4a150-706e-4467-b67e-4cc5e4182c41" name="SysML Req"/>
+    <formalism id="e56dc3d8-f86b-4428-a724-3eeb44251c4c" name="SysML BDD" types="//@process.0/@node.14"/>
+    <formalism id="fbca8ab6-fb19-42d1-852a-432671e404fa" name="VirtualLab Motion" types="//@process.0/@node.15"/>
+    <formalism id="6ff5cc0b-1636-4813-8b77-a40c2eb7d267" name="AMESim" types="//@process.0/@node.16"/>
     <formalism id="8bbdb3f7-cfcd-4a9a-9232-1aa117bb2448" name="CAD" types="//@process.0/@node.17"/>
     <formalism id="e7c00797-e44c-415b-983c-7647c309ebb3" name="Simulink" types="//@process.0/@node.19"/>
-    <transformation id="17346d7e-6a71-4d95-86c8-9c09d0820ff5" name="ConceptDesign" input="//@ftg/@formalism.0" output="//@ftg/@formalism.1" types="//@process.0/@node.3"/>
-    <transformation id="d046e230-14cc-4473-aa00-78cd697cdce4" name="tr1" input="//@ftg/@formalism.1 //@ftg/@formalism.0" output="//@ftg/@formalism.2" types="//@process.0/@node.4"/>
-    <transformation id="6ed406e3-9c1a-4822-aff5-0abb37fe9f3c" name="tr2" input="//@ftg/@formalism.0 //@ftg/@formalism.1" output="//@ftg/@formalism.3" types="//@process.0/@node.5"/>
   </ftg>
   <process id="7980cdac-d753-4511-92e4-29214b748215">
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Initial" id="76a0f917-9d3d-4128-876b-ed735bf18c6b" controlOut="//@process.0/@controlFlow.20"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:FlowFinal" id="e08a0ba6-9657-4617-a49c-b53fc948b7ae" controlIn="//@process.0/@controlFlow.14"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" id="ce311a27-67a4-4a92-85dd-c5692cfa7f25" dataFlowFrom="//@process.0/@node.17" controlIn="//@process.0/@controlFlow.6" controlOut="//@process.0/@controlFlow.5" name="Process Mechanical Design" intent="//@propertyModel/@intent.7 //@propertyModel/@intent.10" partOf="//@process.0/@node.28"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="55ba4eb3-4280-4c20-ac61-a80c478674d1" dataFlowTo="//@process.0/@node.14" controlIn="//@process.0/@controlFlow.20" controlOut="//@process.0/@controlFlow.24" name="Concept Design" typedBy="//@ftg/@transformation.0"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="b1a04d6e-8205-452d-a0ca-c18fe17d90e6" dataFlowFrom="//@process.0/@node.14" dataFlowTo="//@process.0/@node.15" controlIn="//@process.0/@controlFlow.25" controlOut="//@process.0/@controlFlow.16" name="Create MBM" typedBy="//@ftg/@transformation.1"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="f1d74657-0854-4c16-b74c-78646f689917" dataFlowTo="//@process.0/@node.16" controlIn="//@process.0/@controlFlow.16" controlOut="//@process.0/@controlFlow.17" name="Create electical model" typedBy="//@ftg/@transformation.2"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="680724f0-c7e2-442c-9802-a6916a5f5715" controlIn="//@process.0/@controlFlow.13 //@process.0/@controlFlow.18" controlOut="//@process.0/@controlFlow.23" name="Select Battery" intent="//@propertyModel/@intent.0 //@propertyModel/@intent.1"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="0b1f3219-665e-4868-b003-70ad260265c0" controlIn="//@process.0/@controlFlow.9 //@process.0/@controlFlow.19" controlOut="//@process.0/@controlFlow.21" name="Select Motor" intent="//@propertyModel/@intent.2 //@propertyModel/@intent.3"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="3b564f4f-557a-42a3-8ebe-d949a667e2b1" dataFlowFrom="//@process.0/@node.15" dataFlowTo="//@process.0/@node.15" controlIn="//@process.0/@controlFlow.5" controlOut="//@process.0/@controlFlow.3" name="Adapt MBM" intent="//@propertyModel/@intent.8 //@propertyModel/@intent.9"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="1a6b7be8-178b-4989-a282-1686d7c5cb50" dataFlowTo="//@process.0/@node.19" controlIn="//@process.0/@controlFlow.2 //@process.0/@controlFlow.3" controlOut="//@process.0/@controlFlow.4" name="Design PID" intent="//@propertyModel/@intent.11" partOf="//@process.0/@node.27"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" id="c575a03a-2e49-4939-9823-9c851ac72205" dataFlowFrom="//@process.0/@node.19 //@process.0/@node.15" controlIn="//@process.0/@controlFlow.4" controlOut="//@process.0/@controlFlow.0" name="Co-simuate controlled MBM" intent="//@propertyModel/@intent.12 //@propertyModel/@intent.13" partOf="//@process.0/@node.27"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="416e8f4f-eb07-474a-acb0-b2a18c24f2a1" dataFlowTo="//@process.0/@node.16" controlIn="//@process.0/@controlFlow.10" controlOut="//@process.0/@controlFlow.15" name="Adapt Electrical Model" intent="//@propertyModel/@intent.16 //@propertyModel/@intent.17" partOf="//@process.0/@node.30"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" id="94f0adff-1e3a-4fa1-8a05-c7303753f240" dataFlowFrom="//@process.0/@node.16" controlIn="//@process.0/@controlFlow.15" controlOut="//@process.0/@controlFlow.11" name="Simulate Electrical Model" partOf="//@process.0/@node.30"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="9f99b20a-ceda-47f7-988a-7a4adb47838a" dataFlowFrom="//@process.0/@node.32" dataFlowTo="//@process.0/@node.32" controlIn="//@process.0/@controlFlow.11" controlOut="//@process.0/@controlFlow.12" name="Check Autonomy" intent="//@propertyModel/@intent.18"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" id="ce311a27-67a4-4a92-85dd-c5692cfa7f25" dataFlowFrom="//@process.0/@node.17" controlIn="//@process.0/@controlFlow.6" controlOut="//@process.0/@controlFlow.5" name="Process Mechanical Design" cost="//@costModel/@costFactor.0/@cost.7" demand="//@resourceModel/@demand.16" intent="//@propertyModel/@intent.7 //@propertyModel/@intent.10" partOf="//@process.0/@node.28"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="55ba4eb3-4280-4c20-ac61-a80c478674d1" dataFlowTo="//@process.0/@node.14" controlIn="//@process.0/@controlFlow.20" controlOut="//@process.0/@controlFlow.24" name="Concept Design" cost="//@costModel/@costFactor.0/@cost.0" demand="//@resourceModel/@demand.0 //@resourceModel/@demand.1"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="b1a04d6e-8205-452d-a0ca-c18fe17d90e6" dataFlowFrom="//@process.0/@node.14" dataFlowTo="//@process.0/@node.15" controlIn="//@process.0/@controlFlow.25" controlOut="//@process.0/@controlFlow.16" name="Create MBM" cost="//@costModel/@costFactor.0/@cost.2" demand="//@resourceModel/@demand.4 //@resourceModel/@demand.5"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="f1d74657-0854-4c16-b74c-78646f689917" dataFlowTo="//@process.0/@node.16" controlIn="//@process.0/@controlFlow.16" controlOut="//@process.0/@controlFlow.17" name="Create electical model" cost="//@costModel/@costFactor.0/@cost.3" demand="//@resourceModel/@demand.6 //@resourceModel/@demand.7"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="680724f0-c7e2-442c-9802-a6916a5f5715" controlIn="//@process.0/@controlFlow.13 //@process.0/@controlFlow.18" controlOut="//@process.0/@controlFlow.23" name="Select Battery" cost="//@costModel/@costFactor.0/@cost.4" demand="//@resourceModel/@demand.8 //@resourceModel/@demand.10 //@resourceModel/@demand.12" intent="//@propertyModel/@intent.0 //@propertyModel/@intent.1"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="0b1f3219-665e-4868-b003-70ad260265c0" controlIn="//@process.0/@controlFlow.9 //@process.0/@controlFlow.19" controlOut="//@process.0/@controlFlow.21" name="Select Motor" cost="//@costModel/@costFactor.0/@cost.5" demand="//@resourceModel/@demand.9 //@resourceModel/@demand.11 //@resourceModel/@demand.13" intent="//@propertyModel/@intent.2 //@propertyModel/@intent.3"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="3b564f4f-557a-42a3-8ebe-d949a667e2b1" dataFlowFrom="//@process.0/@node.15" dataFlowTo="//@process.0/@node.15" controlIn="//@process.0/@controlFlow.5" controlOut="//@process.0/@controlFlow.3" name="Adapt MBM" cost="//@costModel/@costFactor.0/@cost.8" demand="//@resourceModel/@demand.17 //@resourceModel/@demand.18" intent="//@propertyModel/@intent.8 //@propertyModel/@intent.9"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="1a6b7be8-178b-4989-a282-1686d7c5cb50" dataFlowTo="//@process.0/@node.19" controlIn="//@process.0/@controlFlow.2 //@process.0/@controlFlow.3" controlOut="//@process.0/@controlFlow.4" name="Design PID" cost="//@costModel/@costFactor.0/@cost.9" demand="//@resourceModel/@demand.19 //@resourceModel/@demand.20" intent="//@propertyModel/@intent.11" partOf="//@process.0/@node.27"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" id="c575a03a-2e49-4939-9823-9c851ac72205" dataFlowFrom="//@process.0/@node.19 //@process.0/@node.15" controlIn="//@process.0/@controlFlow.4" controlOut="//@process.0/@controlFlow.0" name="Co-simuate controlled MBM" cost="//@costModel/@costFactor.0/@cost.10" demand="//@resourceModel/@demand.21" intent="//@propertyModel/@intent.12 //@propertyModel/@intent.13" partOf="//@process.0/@node.27"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="416e8f4f-eb07-474a-acb0-b2a18c24f2a1" dataFlowTo="//@process.0/@node.16" controlIn="//@process.0/@controlFlow.10" controlOut="//@process.0/@controlFlow.15" name="Adapt Electrical Model" cost="//@costModel/@costFactor.0/@cost.11" demand="//@resourceModel/@demand.25 //@resourceModel/@demand.26" intent="//@propertyModel/@intent.16 //@propertyModel/@intent.17" partOf="//@process.0/@node.30"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:AutomatedActivity" id="94f0adff-1e3a-4fa1-8a05-c7303753f240" dataFlowFrom="//@process.0/@node.16" controlIn="//@process.0/@controlFlow.15" controlOut="//@process.0/@controlFlow.11" name="Simulate Electrical Model" cost="//@costModel/@costFactor.0/@cost.12" demand="//@resourceModel/@demand.27" partOf="//@process.0/@node.30"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="9f99b20a-ceda-47f7-988a-7a4adb47838a" dataFlowFrom="//@process.0/@node.32" dataFlowTo="//@process.0/@node.32" controlIn="//@process.0/@controlFlow.11" controlOut="//@process.0/@controlFlow.12" name="Check Autonomy" cost="//@costModel/@costFactor.0/@cost.13" demand="//@resourceModel/@demand.28" intent="//@propertyModel/@intent.18"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Object" id="45f894c5-63ae-4559-9a39-839e1cb7870a" dataFlowFrom="//@process.0/@node.3" dataFlowTo="//@process.0/@node.4" name="ConceptModel" typedBy="//@ftg/@formalism.1"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Object" id="2bcf3314-5bc3-450a-9e0b-efd13b65da40" dataFlowFrom="//@process.0/@node.8 //@process.0/@node.4" dataFlowTo="//@process.0/@node.10 //@process.0/@node.8" name="MBM" typedBy="//@ftg/@formalism.2"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Object" id="15d8c9ae-7524-4f0c-bca4-f7c9a4d71eb3" dataFlowFrom="//@process.0/@node.5 //@process.0/@node.11" dataFlowTo="//@process.0/@node.12" name="ElectricalModel" typedBy="//@ftg/@formalism.3"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Object" id="8aa716a5-6507-40c2-8ff0-a66b01344a41" dataFlowFrom="//@process.0/@node.18 //@process.0/@node.29" dataFlowTo="//@process.0/@node.2 //@process.0/@node.18" name="MechanicalModel" typedBy="//@ftg/@formalism.4"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="0933f8f2-d1f7-4b40-a9c9-78ea461710a9" dataFlowFrom="//@process.0/@node.17" dataFlowTo="//@process.0/@node.17" controlIn="//@process.0/@controlFlow.22" controlOut="//@process.0/@controlFlow.6" name="Adapt Mechanical" intent="//@propertyModel/@intent.4 //@propertyModel/@intent.5 //@propertyModel/@intent.6" partOf="//@process.0/@node.28"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="0933f8f2-d1f7-4b40-a9c9-78ea461710a9" dataFlowFrom="//@process.0/@node.17" dataFlowTo="//@process.0/@node.17" controlIn="//@process.0/@controlFlow.22" controlOut="//@process.0/@controlFlow.6" name="Adapt Mechanical" cost="//@costModel/@costFactor.0/@cost.6" demand="//@resourceModel/@demand.14 //@resourceModel/@demand.15" intent="//@propertyModel/@intent.4 //@propertyModel/@intent.5 //@propertyModel/@intent.6" partOf="//@process.0/@node.28"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Object" id="fab70685-4f80-4c48-ba7c-b5e018a9255a" dataFlowFrom="//@process.0/@node.9" dataFlowTo="//@process.0/@node.10" name="Control Model" typedBy="//@ftg/@formalism.5"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="5add4435-648c-446f-b28b-852692a5d1c0" controlIn="//@process.0/@controlFlow.0" controlOut="//@process.0/@controlFlow.1" name="Check Dynamic Response" intent="//@propertyModel/@intent.14 //@propertyModel/@intent.15" partOf="//@process.0/@node.27"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="5add4435-648c-446f-b28b-852692a5d1c0" controlIn="//@process.0/@controlFlow.0" controlOut="//@process.0/@controlFlow.1" name="Check Dynamic Response" cost="//@costModel/@costFactor.0/@cost.14" demand="//@resourceModel/@demand.22 //@resourceModel/@demand.23" intent="//@propertyModel/@intent.14 //@propertyModel/@intent.15" partOf="//@process.0/@node.27"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Decision" id="7c5ea70f-b148-4c07-aca8-b7ee66a99cdd" controlIn="//@process.0/@controlFlow.1" controlOut="//@process.0/@controlFlow.2 //@process.0/@controlFlow.7"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="f7235f94-5625-4da5-8c48-38010635ab1f" dataFlowFrom="//@process.0/@node.31" dataFlowTo="//@process.0/@node.31" controlIn="//@process.0/@controlFlow.7" controlOut="//@process.0/@controlFlow.8" name="Check Motor Power"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="f7235f94-5625-4da5-8c48-38010635ab1f" dataFlowFrom="//@process.0/@node.31" dataFlowTo="//@process.0/@node.31" controlIn="//@process.0/@controlFlow.7" controlOut="//@process.0/@controlFlow.8" name="Check Motor Power" cost="//@costModel/@costFactor.0/@cost.15" demand="//@resourceModel/@demand.24"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Decision" id="763a58b4-3452-4882-9534-6fd89835e892" controlIn="//@process.0/@controlFlow.8" controlOut="//@process.0/@controlFlow.9 //@process.0/@controlFlow.10"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Decision" id="4a35177f-d89b-4d10-968d-95dfa16000e7" controlIn="//@process.0/@controlFlow.12" controlOut="//@process.0/@controlFlow.13 //@process.0/@controlFlow.14"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Fork" id="42a1fd58-e92c-4ee3-882f-d31527556204" controlIn="//@process.0/@controlFlow.17" controlOut="//@process.0/@controlFlow.18 //@process.0/@controlFlow.19"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Join" id="ad487b37-ecf2-48d1-9214-c9c20fbd332f" controlIn="//@process.0/@controlFlow.21 //@process.0/@controlFlow.23" controlOut="//@process.0/@controlFlow.22"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:CompoundActivity" id="a6e788b5-b235-4600-9a4d-fad5966e4be1" name="Control Design" activity="//@process.0/@node.9 //@process.0/@node.10 //@process.0/@node.20"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:CompoundActivity" id="9a46f54a-4c5f-4def-9ddc-61d0b7a058a8" name="Mechanical Design" activity="//@process.0/@node.18 //@process.0/@node.2"/>
-    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="412701ae-7bfa-40af-ba92-0f3292201d5d" dataFlowTo="//@process.0/@node.17" controlIn="//@process.0/@controlFlow.24" controlOut="//@process.0/@controlFlow.25" name="Create Mechanical Model"/>
+    <node xsi:type="be.uantwerpen.msdl.metamodels_1:ManualActivity" id="412701ae-7bfa-40af-ba92-0f3292201d5d" dataFlowTo="//@process.0/@node.17" controlIn="//@process.0/@controlFlow.24" controlOut="//@process.0/@controlFlow.25" name="Create Mechanical Model" cost="//@costModel/@costFactor.0/@cost.1" demand="//@resourceModel/@demand.2 //@resourceModel/@demand.3"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:CompoundActivity" id="3198064a-ca3a-4fc7-87a8-538fe4e71a38" name="Electrical Design" activity="//@process.0/@node.11 //@process.0/@node.12"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Object" id="d97a9d6d-d513-44e0-aaec-f49c298193cd" dataFlowFrom="//@process.0/@node.22" dataFlowTo="//@process.0/@node.22" name="trace"/>
     <node xsi:type="be.uantwerpen.msdl.metamodels_1:Object" id="001587e7-0044-47a1-8925-53cdd72bfcd6" dataFlowFrom="//@process.0/@node.13" dataFlowTo="//@process.0/@node.13" name="trace"/>
@@ -176,12 +173,74 @@
     <intent id="982499f1-e81b-4feb-a244-2f24edd21c95" activity="//@process.0/@node.13" subject="//@propertyModel/@relationship.11" type="CHECK"/>
   </propertyModel>
   <resourceModel>
-    <resourceType name="CAD tool" types="//@resourceModel/@resource.0 //@resourceModel/@resource.1 //@resourceModel/@resource.2"/>
-    <resourceType name="Tool" types="//@resourceModel/@resource.3"/>
-    <resource name="c" typedBy="//@resourceModel/@resourceType.0" availability="100"/>
-    <resource name="c2" typedBy="//@resourceModel/@resourceType.0" availability="200"/>
-    <resource name="c3" typedBy="//@resourceModel/@resourceType.0" availability="300"/>
-    <resource typedBy="//@resourceModel/@resourceType.1" availability="1000"/>
+    <resourceType name="CAD licence" types="//@resourceModel/@resource.4" demand="//@resourceModel/@demand.3 //@resourceModel/@demand.15 //@resourceModel/@demand.16"/>
+    <resourceType name="Mechanical Engineer" types="//@resourceModel/@resource.1" demand="//@resourceModel/@demand.2 //@resourceModel/@demand.4 //@resourceModel/@demand.8 //@resourceModel/@demand.9 //@resourceModel/@demand.14 //@resourceModel/@demand.17"/>
+    <resourceType name="Control Engineer" types="//@resourceModel/@resource.2" demand="//@resourceModel/@demand.19 //@resourceModel/@demand.22"/>
+    <resourceType name="VirtualLab Motion Licence" types="//@resourceModel/@resource.3" demand="//@resourceModel/@demand.5 //@resourceModel/@demand.18 //@resourceModel/@demand.21"/>
+    <resourceType name="Simulink Licence" types="//@resourceModel/@resource.6" demand="//@resourceModel/@demand.20 //@resourceModel/@demand.23"/>
+    <resourceType name="System engineer" types="//@resourceModel/@resource.0" demand="//@resourceModel/@demand.0"/>
+    <resourceType name="Electrical Engineer" types="//@resourceModel/@resource.5" demand="//@resourceModel/@demand.6 //@resourceModel/@demand.10 //@resourceModel/@demand.11 //@resourceModel/@demand.24 //@resourceModel/@demand.25 //@resourceModel/@demand.28"/>
+    <resourceType name="AMESim Licence" types="//@resourceModel/@resource.7" demand="//@resourceModel/@demand.7 //@resourceModel/@demand.26 //@resourceModel/@demand.27"/>
+    <resourceType name="SysML tool" types="//@resourceModel/@resource.8" demand="//@resourceModel/@demand.1"/>
+    <resourceType name="Excel licence" types="//@resourceModel/@resource.9" demand="//@resourceModel/@demand.12 //@resourceModel/@demand.13"/>
+    <resource name="sys engineer" typedBy="//@resourceModel/@resourceType.5"/>
+    <resource name="mechcanical Engineer" typedBy="//@resourceModel/@resourceType.1"/>
+    <resource name="control Engineer" typedBy="//@resourceModel/@resourceType.2"/>
+    <resource name="vlm licence" typedBy="//@resourceModel/@resourceType.3"/>
+    <resource name="cad licence" typedBy="//@resourceModel/@resourceType.0"/>
+    <resource name="electrical Engineer" typedBy="//@resourceModel/@resourceType.6"/>
+    <resource name="simulink licence" typedBy="//@resourceModel/@resourceType.4"/>
+    <resource name="amesim licence" typedBy="//@resourceModel/@resourceType.7"/>
+    <resource name="sysml tool" typedBy="//@resourceModel/@resourceType.8"/>
+    <resource name="excel licence" typedBy="//@resourceModel/@resourceType.9"/>
+    <demand id="84b95eaf-1c77-4b31-bd12-d723d36d9937" amount="1" resourceType="//@resourceModel/@resourceType.5" activity="//@process.0/@node.3"/>
+    <demand id="af28d201-447f-4a51-949b-44507105a519" amount="1" resourceType="//@resourceModel/@resourceType.8" activity="//@process.0/@node.3"/>
+    <demand id="e6b5340a-48b0-4a5e-bbc5-f86f58aa11ab" amount="1" resourceType="//@resourceModel/@resourceType.1" activity="//@process.0/@node.29"/>
+    <demand id="ea7c9333-e595-4eea-80b3-acaa2a6fa816" amount="1" resourceType="//@resourceModel/@resourceType.0" activity="//@process.0/@node.29"/>
+    <demand id="dc241c2e-8ebf-42a5-8c80-c5d96a2e58df" amount="1" resourceType="//@resourceModel/@resourceType.1" activity="//@process.0/@node.4"/>
+    <demand id="1f2c5f25-3080-4055-bf09-94b53a6974fd" amount="1" resourceType="//@resourceModel/@resourceType.3" activity="//@process.0/@node.4"/>
+    <demand id="aea5e0ef-94a2-4244-9d6b-82d3425506e7" amount="1" resourceType="//@resourceModel/@resourceType.6" activity="//@process.0/@node.5"/>
+    <demand id="2eabcb67-daaf-4af1-a422-0652b66dbd6c" amount="1" resourceType="//@resourceModel/@resourceType.7" activity="//@process.0/@node.5"/>
+    <demand id="24e4de32-4977-4823-b51d-acd4d1f6ceef" amount="1" resourceType="//@resourceModel/@resourceType.1" activity="//@process.0/@node.6"/>
+    <demand id="2f33d32d-a3b6-4785-b455-d417fbaf2425" amount="1" resourceType="//@resourceModel/@resourceType.1" activity="//@process.0/@node.7"/>
+    <demand id="b6a51b75-fd11-454a-b512-67a0989e8717" amount="1" resourceType="//@resourceModel/@resourceType.6" activity="//@process.0/@node.6"/>
+    <demand id="34c52cd1-0b5c-411f-9a16-9fb3282f1ef5" amount="1" resourceType="//@resourceModel/@resourceType.6" activity="//@process.0/@node.7"/>
+    <demand id="6597eb3b-331b-458c-8371-75c28a605cbc" amount="1" resourceType="//@resourceModel/@resourceType.9" activity="//@process.0/@node.6"/>
+    <demand id="c20aa90c-af20-4a6e-938a-2bce6678c298" amount="1" resourceType="//@resourceModel/@resourceType.9" activity="//@process.0/@node.7"/>
+    <demand id="4daf9f2e-89e1-4215-9f79-27ca4bccf733" amount="1" resourceType="//@resourceModel/@resourceType.1" activity="//@process.0/@node.18"/>
+    <demand id="cffbefc5-557b-43ba-b026-a2fced52dc58" amount="1" resourceType="//@resourceModel/@resourceType.0" activity="//@process.0/@node.18"/>
+    <demand id="08170062-46d1-49f6-abca-3d332661a5e5" amount="1" resourceType="//@resourceModel/@resourceType.0" activity="//@process.0/@node.2"/>
+    <demand id="4df16dd2-c808-41b5-9691-931c43948fc6" amount="1" resourceType="//@resourceModel/@resourceType.1" activity="//@process.0/@node.8"/>
+    <demand id="a053a0ff-7910-4738-a2cd-4aa1c2a0500d" amount="1" resourceType="//@resourceModel/@resourceType.3" activity="//@process.0/@node.8"/>
+    <demand id="7f3955b1-a937-4250-89a2-808b4a3a0723" amount="1" resourceType="//@resourceModel/@resourceType.2" activity="//@process.0/@node.9"/>
+    <demand id="eb7bd6cf-bae9-4959-88d9-7209da6858a1" amount="1" resourceType="//@resourceModel/@resourceType.4" activity="//@process.0/@node.9"/>
+    <demand id="f5d187b7-d9e6-467d-9e7f-f3b392624e01" amount="1" resourceType="//@resourceModel/@resourceType.3" activity="//@process.0/@node.10"/>
+    <demand id="67f2189f-a0a8-461f-a996-9c477bd94bad" amount="1" resourceType="//@resourceModel/@resourceType.2" activity="//@process.0/@node.20"/>
+    <demand id="4dbd6afb-feb3-4888-ac91-6efcd0c82310" amount="1" resourceType="//@resourceModel/@resourceType.4" activity="//@process.0/@node.20"/>
+    <demand id="b4732ccb-d817-4029-8b59-a9b842043229" amount="1" resourceType="//@resourceModel/@resourceType.6" activity="//@process.0/@node.22"/>
+    <demand id="c5358864-8680-4c9a-a070-cb48faf6b539" amount="1" resourceType="//@resourceModel/@resourceType.6" activity="//@process.0/@node.11"/>
+    <demand id="3aee79a8-e32f-4b70-bdd4-74f32d9fffbc" amount="1" resourceType="//@resourceModel/@resourceType.7" activity="//@process.0/@node.11"/>
+    <demand id="c8c8c899-eb65-41d4-8ca9-ab1a842dc874" amount="1" resourceType="//@resourceModel/@resourceType.7" activity="//@process.0/@node.12"/>
+    <demand id="847b2d49-9822-4806-a7e2-2922d9f7f6de" amount="1" resourceType="//@resourceModel/@resourceType.6" activity="//@process.0/@node.13"/>
   </resourceModel>
-  <costModel/>
+  <costModel>
+    <costFactor name="Development time" id="4d3cf754-c257-47b6-9b75-bd76a25d3ce4" type="Time">
+      <cost costItem="//@process.0/@node.3" value="40.0"/>
+      <cost costItem="//@process.0/@node.29" value="24.0"/>
+      <cost costItem="//@process.0/@node.4" value="8.0"/>
+      <cost costItem="//@process.0/@node.5" value="24.0"/>
+      <cost costItem="//@process.0/@node.6" value="4.0"/>
+      <cost costItem="//@process.0/@node.7" value="4.0"/>
+      <cost costItem="//@process.0/@node.18" value="8.0"/>
+      <cost costItem="//@process.0/@node.2" value="1.0"/>
+      <cost costItem="//@process.0/@node.8" value="4.0"/>
+      <cost costItem="//@process.0/@node.9" value="8.0"/>
+      <cost costItem="//@process.0/@node.10" value="2.0"/>
+      <cost costItem="//@process.0/@node.11" value="8.0"/>
+      <cost costItem="//@process.0/@node.12" value="4.0"/>
+      <cost costItem="//@process.0/@node.13" value="1.0"/>
+      <cost costItem="//@process.0/@node.20" value="1.0"/>
+      <cost costItem="//@process.0/@node.22" value="1.0"/>
+    </costFactor>
+  </costModel>
 </be.uantwerpen.msdl.metamodels:ProcessModel>
